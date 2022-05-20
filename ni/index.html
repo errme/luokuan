@@ -1,1 +1,486 @@
-<!-- 代码如诗 , 如痴如醉 ! --> <!DOCTYPE html> <html lang="zh-CN"> <head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,maximum-scale=0.4, user-scalable=no"> <meta name="author" content="苍耳"> <meta name="keywords" content="一期一会,草长莺飞"> <meta name="description" content="我们像才华横溢的诗歌，无须冥思，就自由生长，句句押韵，在记忆中铭刻剪影，阳光闪烁，边缘耀眼。 - by : 苍耳"> <title>一期一会</title> <link rel="icon" href="./images/icon.jpg"> <link rel="stylesheet" href="./css/font.css"> <link rel="stylesheet" href="./css/index.css"> <link rel="stylesheet" href="./css/style.css"> <link rel="stylesheet" href="./css/responsive.css"> <link rel="stylesheet" href="./live2d/static/pio.css"> <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css"> <script src="./lib/jquery-3.4.1/jquery-3.4.1.min.js"></script> <script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script> <script src="./lib/underscore/underscore-min.js"></script> <script src="./js/jsmodern.js"></script> <script src="./js/index.js"></script> <script src="./js/typed.js"></script> <script type="text/template" id="template_point"> <%$.each(model,function(i,item){%> <li class="<%=i==0?'active':''%>" data-target="#slidershow" datta-slide-to="<%=i%> "></li> <%});%> </script> <script type="text/template" id="template_image"> <%$.each(model,function(i,item){%> <div class="item <%=i==0?'active':''%> "> <%if(isMobile){%> <a href="" class="m_imageBox"> <img src="<%=item.mb%> " alt=""> </a> <%} else{%> <a href="" class="pc_imageBox"> <img src="<%=item.pc%>" alt=""> </a> <%} %> </div> <%});%> </script> <!-- Global site tag (gtag.js) - Google Analytics --> <!-- <script> !function (e, a, t, n, g, c, o) { e.GoogleAnalyticsObject = g, e.ga = e.ga || function () { (e.ga.q = e.ga.q || []).push(arguments) }, e.ga.l = 1 * new Date, c = a.createElement(t), o = a.getElementsByTagName(t)[0], c.async = 1, c.src = "./js/analytics.js", o.parentNode.insertBefore(c, o) }(window, document, "script", 0, "ga"), ga("create", "UA-142766624-2", "auto"), ga("send", "pageview"); </script> --> <!-- 百度统计 --> <!-- <script> var _hmt = _hmt || []; (function() { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?ad5c7879622ab0f8e4c3bb22ff10f189"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })(); </script> --> <!-- Global site tag (gtag.js) - Google Analytics --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-S7H54SSYSY"></script> <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-S7H54SSYSY'); </script> <script> var _hmt = _hmt || []; (function () { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?b2a007349799d49b69b342d9227da531"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })(); </script> </head> <body class="night"> <!-- 导航栏 --> <div class="topbar"> <div class="headMenu"> <a class="site_one_logo" href="https://www.errrrrr.com" target="_self"> </a> <a class="site_one_logo_scroll" href="https://www.errrrrr.com" target="_self"> </a> <ul class="topmenu"> <li><a href="#">草长莺飞</a></li> <li><a href="#">清风月明</a></li> <li><a href="#">人间情书</a></li> <li><a href="#">星河滚烫</a></li> </ul> </div> </div> <!-- 轮播图 --> <div class="banner"> <div id="slidershow" class="carousel slide" data-ride="carousel"> <ol class="carousel-indicators"> </ol> <div class="carousel-inner"> </div> <a href="#slidershow" class="left carousel-control" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a> <a href="#slidershow" class="right carousel-control" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a> </div> </div> <!-- muscic --> <div class="music_mp3"> <audio id="music" controls="true" autoplay="true" hidden></audio> <div onclick="music_s();"> <img src="./images/music3.png" id="music_png" alt=""> </div> </div> <!-- tashou --> <!-- 打字机 --> <div class="tashuo"> <div class="tashuo_content"> <i class="quote-before fa fa-quote-left"></i> 说起女孩子啊，不由得先想到好看的裙摆和清澈的笑。<br> 在最好的年纪笑着跳着，似乎所有俗世的尘埃都不舍得沾染这美好的灵魂。若非要找个词来形容，大概是，“春风”？<br> 可是，春风十里，还是不如你啊。 <i class="quote-after fa fa-quote-right"></i> </div> <div class="tashuo_title typed"></div> <div class="tashou_bottom"></div> </div> <!-- 第一人称 --> <!-- 栅格系统 --> <div class="me"> <div class="you_title"> <span class="en">书信</span> <span class="cn">&nbsp;&nbsp;/&nbsp;&nbsp;致第一人称</span><br> <img src="./images/1.gif"> </div> <div class="container"> <div class="row"> <div class="col-md-4"> <h3 class="title-small"> <span>收集温柔的碎片</span> </h3> <div class="active detail"> <a href="#vedio_one" data-toggle="tab"> <p class="content-detail detail_one"> 关于温柔啊。<br> 最喜欢的是润物细无声温温柔柔的人。没有任何尖锐的刺，时刻保持一种和谐让人愿意接近的气质。<br> 那些仓皇岁月里难得温柔的瞬间，藏在了细微之处。 </p> </a> </div> <div> <a href="#vedio_two" data-toggle="tab"> <p class="content-detail detail_two hidden-sm"> 那大概是落日渐渐褪去晚霞初上之时吧，晚风伴着耳机里的音乐享受的时刻。<br> 午睡前窗外风吹动树叶的沙沙声，夏天特有的温柔。<br> 清晨的吻和温热的粥，与一个人相谈甚欢。 </p> </a> </div> </div> <div class="col-md-8 content-right"> <div class="tab-content"> <div class="active tab-pane" id="vedio_one"> <div id="video"> <video src="./video/1585131010146.mp4" id="videoShow"></video> <span class="VideoBtn"> <img src="./images/bo1.png"></span> <div class="videotime"></div> </div> </div> <div class="tab-pane" id="vedio_two"> <div id="video1"> <video src="./video/1585317036550.mp4" id="videoShow1"></video> <span class="VideoBtn1"> <img src="./images/bo1.png"> </span> <div class="videotime"></div> </div> </div> </div> </div> </div> </div> </div> <!-- 第二人称 --> <!-- 标签页 --> <div class="ni"> <div class="you_title"> <span class="en">书信</span> <span class="cn">&nbsp;&nbsp;/&nbsp;&nbsp;致第二人称</span><br> <img src="./images/777.gif"> </div> <div class="container"> <dir class="row"> <div class="col-md-3 col-md-offset-1"> <div class="nav nav-tabs-news"> <div class="active tabpage_a tabpage_one"> <a href="#tabpage_one" data-toggle="tab"> <img src="./images/ni_1.gif" alt=""> </a> </div> <div class="tabpage_a tabpage_two"> <a href="#tabpage_two" data-toggle="tab"> <img src="./images/ni_2.gif" alt=""> </a> </div> </div> </div> <div class="col-md-7"> <div class="tab-content"> <div class="active tab-pane" id="tabpage_one"> <ul> <li class="topw_item"> <a class="writing" href="" target="_blank"> <img class="topw_photo" src="./images/icon.jpg" /> <div class="wtop_name">苍耳</div> <div class="topw_title">把每次偶遇的蓝色都送给你&nbsp;&nbsp; <img src="./images/9.gif" alt=""></div> <div class="topw_content"> <p>说起女孩子啊，不由得先想到好看的裙摆和清澈的笑。</p> <p>在最好的年纪笑着跳着，似乎所有俗世的尘埃都不舍得沾染这美好的灵魂。</p> <p>若非要找个词来形容，大概是，“春风”？</p> <p>可是</p> <p>春风十里，还是不如你啊。</p> </div> </a> </li> </ul> </div> <div class="tab-pane" id="tabpage_two"> <ul> <li class="topw_item"> <a class="writing" href="" target="_blank"> <img class="topw_photo" src="./images/banner_sm_1.png" /> <div class="wtop_name">可爱</div> <div class="topw_title">印象中的夏天呀&nbsp;&nbsp; <img src="./images/9.gif" alt=""> </div> <div class="topw_content"> <p>印象中的夏天，在每一个醒来的清晨，抱怨睡眠太少，日子太长。</p> <p>印象中的夏天，常常恳请别人帮忙带早餐。</p> <p>印象中的夏天，背着书包在铃声响起之前冲进教室，凌乱了自己。</p> <p>印象中的夏天，上课忽然走神，想到好玩的事偷笑，或者幻想成功后的自己….然后忽然醒来，问同桌老师讲到哪里了。</p> </div> </a> </li> </ul> </div> </div> </div> </div> </div> </div> <!-- 第三人称 --> <!-- 响应式 --> <div class="ta"> <div class="you_title"> <span class="en">书信</span> <span class="cn">&nbsp;&nbsp;/&nbsp;&nbsp;致第三人称</span><br> <img src="./images/1.gif"> </div> <div class="ta_article"> <div class="primary"> <div class="post"> <a href="/2019/08/28/xia/"> <img src="./images/ta.png" class="cover"> </a> <div class="else"> <p>八月 28, 2019</p> <h3><a href="/2019/08/28/xia/" class="posttitle">印象中的夏天</a></h3> <p>印象中的夏天是这样开始的，“考试结束，请考生立即停笔…….”，忘记了那天的天空是否很蓝，忘记了云朵是否像往日那般洁白，只记得那时心中弥漫的是一种不知名的情...</p> </div> </div> <div class="post"> <a href="/2018/09/01/bkn/"> <img src="./images/ta.png" class="cover"> </a> <div class="else"> <p>九月 01, 2018</p> <h3><a href="/2018/09/01/bkn/" class="posttitle">不可能的人</a></h3> <p>每个人心里住了一个不可能的人，这不可能的人给了我们狂喜和遗憾，这些狂喜和遗憾又酿成了回忆。关于那一个心里不可能的人，有人说，就请那些被我们狠狠爱过的人，在...</p> </div> </div> <div class="post hidden-sm"> <a href="/2018/05/20/xg/"> <img src="./images/ta.png" class="cover"> </a> <div class="else"> <p>五月 20, 2018</p> <h3><a href="/2018/05/20/xg/" class="posttitle">习惯</a></h3> <p>两个人相爱多久，才可以确定这两个人可以长长久久的走下去。我想是习惯吧。 可是习惯这件事，到底是好是坏呢？ 如果对方告诉你，我习惯爱你，你会不会觉得心里还欠... </p> </div> </div> </div> </div> </div> <!-- <div class="moreDiv"><a class="more" href="#">NEXT</a></div> --> <!-- live2d --> <div class="pio-container left"> <div class="pio-action"></div> <canvas id="pio" width="250" height="250"></canvas> </div> <!-- footer --> <footer id="footer"> <div class="footer_con"> <p>Copyright&nbsp;&copy;&nbsp;2020&nbsp;•&nbsp;Theme&nbsp;by&nbsp;: <a class="posttitle" href="https://www.errrrrr.com" target="_self">Canger</a>&nbsp;•&nbsp;Run&nbsp;Time&nbsp;: <a class="posttitle" href="" target="_self"><span id="span_dt_dt"></span></a> </p> <ul> <li><a href="https://github.com/errme" target="_blank"><img src="./images/github.png" alt=""></a></li> <!-- <li><a href="#"><img src="./images/bilibili-line.png" alt=""></a></li> <li><a href="#"><img src="./images/twitter.png" alt=""></a></li> --> </ul> </div> </footer> <!-- 向上滑显示banner --> <script> $(function () { //menu var scrollTopVal_head_ = 0; $(window).scroll(function () { if ($(window).scrollTop() > 0) { if (!$(".topbar").hasClass("topbarFixed")) { $(".topbar").addClass("topbarFixed").hide(); } } else { $(".topbar").removeClass("topbarFixed"); } if ($(window).scrollTop() <= scrollTopVal_head_) { //向上滑 $(".topbarFixed").show(); } else { $(".topbarFixed").hide(); } scrollTopVal_head_ = $(window).scrollTop(); }); }); </script> <!-- run time --> <script> function show_date_time() { window.setTimeout("show_date_time()", 1000); var h = new Date("5/16/2020 19:00:00"), j = new Date, d = j.getTime() - h.getTime(), i = 86400000, b = d / i, g = Math.floor(b), c = 24 * (b - g), a = Math.floor(c), f = 60 * (c - a), l = Math.floor(60 * (c - a)), k = Math.floor(60 * (f - l)); span_dt_dt.innerHTML = g + "&nbsp;d&nbsp;" + a + "&nbsp;hr&nbsp;" + l + "&nbsp;m&nbsp;" + k + "&nbsp;sec" } show_date_time(); </script> <!-- 离开网页时title --> <script> var OriginTitile = document.title, titleTime; document.addEventListener("visibilitychange", function () { if (document.hidden) { $('[rel="shortcut icon"]').attr("href", "./images/favicon.ico"); document.title = "(●—●)喔哟，崩溃啦！"; clearTimeout(titleTime) } else { $('[rel="shortcut icon"]').attr("href", "./images/favicon.ico"); document.title = "(/≧▽≦/)咦！又好了！ " + OriginTitile; titleTime = setTimeout(function () { document.title = OriginTitile }, 2000) } }); </script> <!-- 返回顶部插件 --> <a href="#0" class="cd-top">Top</a> <script src="./js/jquery.cdtop.min.js"></script> <script src="./js/main.js"></script> <!-- Live2d --> <script src="./live2d/static/l2d.js"></script> <script src="./live2d/static/pio.js"></script> <!-- music --> <script> window.onload = function () { var musicList = ["./music/music.mp3", "./music/1585720344287.mp3", "./music/1585131004138.mp3", "./music/qf.mp3" ]; playMusic(musicList); } var audio = document.getElementById('music'); function playMusic(musicList) { var src = musicList.pop(); // 删除并返回数组的最后一个元素 audio.src = src; musicList.unshift(src); // 向数组的开头添加一个或更多元素 并返回新的长度 audio.addEventListener("ended", playEndedHandler, false); function playEndedHandler() { src = musicList.pop(); audio.src = src; musicList.unshift(src); } } function music_s() { if (audio.paused) { audio.play(); // 播放 document.getElementById('music_png').src = './images/music4.png'; } else { audio.pause(); // 暂停 document.getElementById('music_png').src = './images/music2.png'; } } </script> </body> </html>
+<!--
+代码如诗 , 如痴如醉 !
+-->
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1,maximum-scale=0.4, user-scalable=no">
+    <meta name="author" content="苍耳">
+    <meta name="keywords" content="一期一会,草长莺飞">
+    <meta name="description" content="我们像才华横溢的诗歌，无须冥思，就自由生长，句句押韵，在记忆中铭刻剪影，阳光闪烁，边缘耀眼。 - by : 苍耳">
+
+    <title>一期一会</title>
+
+    <link rel="icon" href="./images/icon.jpg">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./live2d/static/pio.css">
+    <link rel="stylesheet" href="./lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+    <script src="./lib/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+    <script src="./lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="./lib/underscore/underscore-min.js"></script>
+    <script src="./js/jsmodern.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/typed.js"></script>
+
+    <script type="text/template" id="template_point">
+        <%$.each(model,function(i,item){%>
+            <li class="<%=i==0?'active':''%>" data-target="#slidershow" datta-slide-to="<%=i%> "></li>
+        <%});%>
+    </script>
+    <script type="text/template" id="template_image">
+        <%$.each(model,function(i,item){%>
+            <div class="item <%=i==0?'active':''%> ">
+            <%if(isMobile){%>
+                <a href="" class="m_imageBox">
+                    <img src="<%=item.mb%> " alt="">
+                </a>
+            <%}
+            else{%>
+                <a href="" class="pc_imageBox">
+                    <img src="<%=item.pc%>" alt="">
+                </a>
+                <%}
+            %> 
+            </div>
+        <%});%>
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script>
+        !function (e, a, t, n, g, c, o) {
+            e.GoogleAnalyticsObject = g, e.ga = e.ga || function () {
+                (e.ga.q = e.ga.q || []).push(arguments)
+            },
+                e.ga.l = 1 * new Date,
+                c = a.createElement(t),
+                o = a.getElementsByTagName(t)[0],
+                c.async = 1,
+                c.src = "./js/analytics.js",
+                o.parentNode.insertBefore(c, o)
+        }(window, document, "script", 0, "ga"),
+            ga("create", "UA-142766624-2", "auto"),
+            ga("send", "pageview");
+    </script> -->
+
+    <!-- 百度统计 -->
+    <!-- <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?ad5c7879622ab0f8e4c3bb22ff10f189";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script> -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S7H54SSYSY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-S7H54SSYSY');
+    </script>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b2a007349799d49b69b342d9227da531";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</head>
+
+<body class="night">
+    <!-- 导航栏 -->
+    <div class="topbar">
+        <div class="headMenu">
+            <a class="site_one_logo" href="https://www.errrrrr.com" target="_self">
+            </a>
+            <a class="site_one_logo_scroll" href="https://www.errrrrr.com" target="_self">
+            </a>
+            <ul class="topmenu">
+                <li><a href="#">草长莺飞</a></li>
+                <li><a href="#">清风月明</a></li>
+                <li><a href="#">人间情书</a></li>
+                <li><a href="#">星河滚烫</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- 轮播图 -->
+    <div class="banner">
+
+        <div id="slidershow" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+
+            </ol>
+            <div class="carousel-inner">
+
+            </div>
+            <a href="#slidershow" class="left carousel-control" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href="#slidershow" class="right carousel-control" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- muscic -->
+    <div class="music_mp3">
+
+        <audio id="music" controls="true" autoplay="true" hidden></audio>
+        <div onclick="music_s();">
+            <img src="./images/music3.png" id="music_png" alt="">
+        </div>
+
+    </div>
+
+    <!-- tashou -->
+    <!-- 打字机 -->
+    <div class="tashuo">
+        <div class="tashuo_content">
+            <i class="quote-before fa fa-quote-left"></i>
+            说起女孩子啊，不由得先想到好看的裙摆和清澈的笑。<br>
+            在最好的年纪笑着跳着，似乎所有俗世的尘埃都不舍得沾染这美好的灵魂。若非要找个词来形容，大概是，“春风”？<br>
+            可是，春风十里，还是不如你啊。
+            <i class="quote-after fa fa-quote-right"></i>
+        </div>
+        <div class="tashuo_title typed"></div>
+        <div class="tashou_bottom"></div>
+    </div>
+
+    <!-- 第一人称 -->
+    <!-- 栅格系统 -->
+    <div class="me">
+        <div class="you_title">
+            <span class="en">书信</span> <span class="cn">&nbsp;&nbsp;/&nbsp;&nbsp;致第一人称</span><br>
+            <img src="./images/1.gif">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="title-small">
+                        <span>收集温柔的碎片</span>
+                    </h3>
+                    <div class="active detail">
+                        <a href="#vedio_one" data-toggle="tab">
+                            <p class="content-detail detail_one">
+                                关于温柔啊。<br>
+                                最喜欢的是润物细无声温温柔柔的人。没有任何尖锐的刺，时刻保持一种和谐让人愿意接近的气质。<br>
+                                那些仓皇岁月里难得温柔的瞬间，藏在了细微之处。
+                            </p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#vedio_two" data-toggle="tab">
+                            <p class="content-detail detail_two hidden-sm">
+                                那大概是落日渐渐褪去晚霞初上之时吧，晚风伴着耳机里的音乐享受的时刻。<br>
+                                午睡前窗外风吹动树叶的沙沙声，夏天特有的温柔。<br>
+                                清晨的吻和温热的粥，与一个人相谈甚欢。
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-8 content-right">
+                    <div class="tab-content">
+                        <div class="active tab-pane" id="vedio_one">
+                            <div id="video">
+                                <video src="./video/1585131010146.mp4" id="videoShow"></video>
+                                <span class="VideoBtn">
+                                    <img src="./images/bo1.png"></span>
+                                <div class="videotime"></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="vedio_two">
+                            <div id="video1">
+                                <video src="./video/1585317036550.mp4" id="videoShow1"></video>
+                                <span class="VideoBtn1">
+                                    <img src="./images/bo1.png">
+                                </span>
+                                <div class="videotime"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第二人称 -->
+    <!-- 标签页 -->
+    <div class="ni">
+        <div class="you_title">
+            <span class="en">书信</span> <span class="cn">&nbsp;&nbsp;/&nbsp;&nbsp;致第二人称</span><br>
+            <img src="./images/777.gif">
+        </div>
+        <div class="container">
+            <dir class="row">
+                <div class="col-md-3 col-md-offset-1">
+                    <div class="nav nav-tabs-news">
+                        <div class="active tabpage_a tabpage_one">
+                            <a href="#tabpage_one" data-toggle="tab">
+                                <img src="./images/ni_1.gif" alt="">
+                            </a>
+                        </div>
+                        <div class="tabpage_a tabpage_two">
+                            <a href="#tabpage_two" data-toggle="tab">
+                                <img src="./images/ni_2.gif" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="tab-content">
+                        <div class="active tab-pane" id="tabpage_one">
+                            <ul>
+                                <li class="topw_item">
+                                    <a class="writing" href="" target="_blank">
+                                        <img class="topw_photo" src="./images/icon.jpg" />
+                                        <div class="wtop_name">苍耳</div>
+                                        <div class="topw_title">把每次偶遇的蓝色都送给你&nbsp;&nbsp;
+                                            <img src="./images/9.gif" alt=""></div>
+                                        <div class="topw_content">
+                                            <p>说起女孩子啊，不由得先想到好看的裙摆和清澈的笑。</p>
+                                            <p>在最好的年纪笑着跳着，似乎所有俗世的尘埃都不舍得沾染这美好的灵魂。</p>
+                                            <p>若非要找个词来形容，大概是，“春风”？</p>
+                                            <p>可是</p>
+                                            <p>春风十里，还是不如你啊。</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-pane" id="tabpage_two">
+                            <ul>
+                                <li class="topw_item">
+                                    <a class="writing" href="" target="_blank">
+                                        <img class="topw_photo" src="./images/banner_sm_1.png" />
+                                        <div class="wtop_name">可爱</div>
+                                        <div class="topw_title">印象中的夏天呀&nbsp;&nbsp;
+                                            <img src="./images/9.gif" alt="">
+                                        </div>
+                                        <div class="topw_content">
+                                            <p>印象中的夏天，在每一个醒来的清晨，抱怨睡眠太少，日子太长。</p>
+                                            <p>印象中的夏天，常常恳请别人帮忙带早餐。</p>
+                                            <p>印象中的夏天，背着书包在铃声响起之前冲进教室，凌乱了自己。</p>
+                                            <p>印象中的夏天，上课忽然走神，想到好玩的事偷笑，或者幻想成功后的自己….然后忽然醒来，问同桌老师讲到哪里了。</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- 第三人称 -->
+    <!-- 响应式 -->
+    <div class="ta">
+        <div class="you_title">
+            <span class="en">书信</span> <span class="cn">&nbsp;&nbsp;/&nbsp;&nbsp;致第三人称</span><br>
+            <img src="./images/1.gif">
+        </div>
+        <div class="ta_article">
+            <div class="primary">
+                <div class="post">
+                    <a href="/2019/08/28/xia/">
+                        <img src="./images/ta.png" class="cover">
+                    </a>
+                    <div class="else">
+                        <p>八月 28, 2019</p>
+                        <h3><a href="/2019/08/28/xia/" class="posttitle">印象中的夏天</a></h3>
+                        <p>印象中的夏天是这样开始的，“考试结束，请考生立即停笔…….”，忘记了那天的天空是否很蓝，忘记了云朵是否像往日那般洁白，只记得那时心中弥漫的是一种不知名的情...</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <a href="/2018/09/01/bkn/">
+                        <img src="./images/ta.png" class="cover">
+                    </a>
+                    <div class="else">
+                        <p>九月 01, 2018</p>
+                        <h3><a href="/2018/09/01/bkn/" class="posttitle">不可能的人</a></h3>
+                        <p>每个人心里住了一个不可能的人，这不可能的人给了我们狂喜和遗憾，这些狂喜和遗憾又酿成了回忆。关于那一个心里不可能的人，有人说，就请那些被我们狠狠爱过的人，在...</p>
+                    </div>
+                </div>
+
+
+                <div class="post hidden-sm">
+                    <a href="/2018/05/20/xg/">
+                        <img src="./images/ta.png" class="cover">
+                    </a>
+                    <div class="else">
+                        <p>五月 20, 2018</p>
+                        <h3><a href="/2018/05/20/xg/" class="posttitle">习惯</a></h3>
+                        <p>两个人相爱多久，才可以确定这两个人可以长长久久的走下去。我想是习惯吧。 可是习惯这件事，到底是好是坏呢？ 如果对方告诉你，我习惯爱你，你会不会觉得心里还欠...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="moreDiv"><a class="more" href="#">NEXT</a></div> -->
+
+    <!-- live2d -->
+    <div class="pio-container left">
+        <div class="pio-action"></div>
+        <canvas id="pio" width="250" height="250"></canvas>
+    </div>
+
+    <!-- footer -->
+    <footer id="footer">
+
+        <div class="footer_con">
+
+            <p>Copyright&nbsp;&copy;&nbsp;2020&nbsp;•&nbsp;Theme&nbsp;by&nbsp;:
+                <a class="posttitle" href="https://www.errrrrr.com"
+                    target="_self">Canger</a>&nbsp;•&nbsp;Run&nbsp;Time&nbsp;:
+                <a class="posttitle" href="" target="_self"><span id="span_dt_dt"></span></a>
+            </p>
+            <ul>
+                <li><a href="https://github.com/errme" target="_blank"><img src="./images/github.png" alt=""></a></li>
+                <!-- <li><a href="#"><img src="./images/bilibili-line.png" alt=""></a></li>
+                <li><a href="#"><img src="./images/twitter.png" alt=""></a></li> -->
+            </ul>
+        </div>
+
+    </footer>
+
+    <!-- 向上滑显示banner -->
+    <script>
+        $(function () {
+            //menu
+            var scrollTopVal_head_ = 0;
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 0) {
+                    if (!$(".topbar").hasClass("topbarFixed")) {
+                        $(".topbar").addClass("topbarFixed").hide();
+                    }
+                } else {
+                    $(".topbar").removeClass("topbarFixed");
+                }
+
+                if ($(window).scrollTop() <= scrollTopVal_head_) {
+                    //向上滑
+                    $(".topbarFixed").show();
+                } else {
+                    $(".topbarFixed").hide();
+                }
+                scrollTopVal_head_ = $(window).scrollTop();
+            });
+        });
+    </script>
+
+    <!-- run time -->
+    <script>
+        function show_date_time() {
+            window.setTimeout("show_date_time()", 1000);
+            var h = new Date("5/16/2020 19:00:00"),
+                j = new Date,
+                d = j.getTime() - h.getTime(),
+                i = 86400000,
+                b = d / i,
+                g = Math.floor(b),
+                c = 24 * (b - g),
+                a = Math.floor(c),
+                f = 60 * (c - a),
+                l = Math.floor(60 * (c - a)),
+                k = Math.floor(60 * (f - l));
+
+            span_dt_dt.innerHTML = g + "&nbsp;d&nbsp;" + a + "&nbsp;hr&nbsp;" + l + "&nbsp;m&nbsp;" + k + "&nbsp;sec"
+
+        }
+        show_date_time();
+    </script>
+
+    <!-- 离开网页时title -->
+    <script>
+        var OriginTitile = document.title,
+            titleTime;
+        document.addEventListener("visibilitychange", function () {
+            if (document.hidden) {
+                $('[rel="shortcut icon"]').attr("href", "./images/favicon.ico");
+                document.title = "(●—●)喔哟，崩溃啦！";
+                clearTimeout(titleTime)
+            } else {
+                $('[rel="shortcut icon"]').attr("href", "./images/favicon.ico");
+                document.title = "(/≧▽≦/)咦！又好了！ " + OriginTitile;
+                titleTime = setTimeout(function () {
+                    document.title = OriginTitile
+                }, 2000)
+            }
+        });
+    </script>
+
+    <!-- 返回顶部插件 -->
+    <a href="#0" class="cd-top">Top</a>
+
+    <script src="./js/jquery.cdtop.min.js"></script>
+
+    <script src="./js/main.js"></script>
+
+    <!-- Live2d -->
+    <script src="./live2d/static/l2d.js"></script>
+
+    <script src="./live2d/static/pio.js"></script>
+
+    <!-- music -->
+    <script>
+        window.onload = function () {
+            var musicList = ["./music/music.mp3", "./music/1585720344287.mp3", "./music/1585131004138.mp3",
+                "./music/qf.mp3"
+            ];
+            playMusic(musicList);
+        }
+        var audio = document.getElementById('music');
+
+        function playMusic(musicList) {
+            var src = musicList.pop(); // 删除并返回数组的最后一个元素
+            audio.src = src;
+            musicList.unshift(src); // 向数组的开头添加一个或更多元素 并返回新的长度
+            audio.addEventListener("ended", playEndedHandler, false);
+
+            function playEndedHandler() {
+                src = musicList.pop();
+                audio.src = src;
+                musicList.unshift(src);
+            }
+        }
+
+        function music_s() {
+            if (audio.paused) {
+                audio.play(); // 播放
+                document.getElementById('music_png').src = './images/music4.png';
+            } else {
+                audio.pause(); // 暂停
+                document.getElementById('music_png').src = './images/music2.png';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
