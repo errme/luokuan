@@ -37,6 +37,19 @@
     }
   </style>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S7H54SSYSY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-S7H54SSYSY');
+  </script>
+
   <script>
     var _hmt = _hmt || [];
     (function () {
@@ -336,7 +349,7 @@
       render: function (context) {
         var height = this.height + this.VERTICAL_THRESHOLD,
           scale = this.INIT_SCALE + (1 - this.INIT_SCALE) * (height - this.y) / height * (this.RANGE_Z.max - this
-          .z) / this.RANGE_Z.max * 2,
+            .z) / this.RANGE_Z.max * 2,
           top = (Math.sin(this.phi) < 0 ? 50 : 60) * Math.sin(this.phi);
 
         context.save();
