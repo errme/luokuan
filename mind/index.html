@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>mymind</title>
+
+  <link rel="stylesheet" href="134/0.10.28/onboard/styles/base.css">
+  <link rel="stylesheet" href="134/0.10.28/styles/orb.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <main>
+    <div class="onboard waitlist intro-reveal">
+      <div class="branding">
+        <div class="icon"></div>
+      </div>
+
+      <div class="orb">
+        <div id="intro-canvas" class="intro-canvas"></div>
+        <div class="intro-overlay basic"></div>
+        <div class="intro-overlay blurred"></div>
+      </div>
+
+      <div class="guts">
+        <div class="rhs">
+          <div class="wrapper">
+            <div class="main">
+              <img class="logo" src="134/0.10.28/onboard/images/branding-icon.svg">
+
+              <h1>Your new<br>mind is here.</h1>
+
+              <form method="POST" action="/google/oauth2-redirect?createAccount=true" class="signup-with-google">
+                <img src="134/0.10.28/icons/google.png">
+                <span>Sign up with Google</span>
+              </form>
+
+              <div class="signup-with-apple request-invite" id="appleid-signin" data-color="white" data-border="false"
+                data-type="sign in"></div>
+            </div>
+
+            <div class="footer">Already have an account? <a href="signin.html">Sign in here.</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="132/0.91.0/scripts/anime.js" crossorigin=""></script>
+
+  <script src="134/0.10.28/scripts/util.js" crossorigin=""></script>
+  <script src="134/0.10.28/scripts/vendor/three.min.js" crossorigin=""></script>
+  <script src="134/0.10.28/scripts/vendor/postprocessing.min.js" crossorigin=""></script>
+  <script src="134/0.10.28/scripts/components/orb.js" crossorigin=""></script>
+  <script src="134/0.10.28/authentication/scripts/controller.js" crossorigin=""></script>
+</body>
+
+</html>
