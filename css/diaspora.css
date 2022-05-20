@@ -14,13 +14,13 @@ body.loading:before {display:block;}
   50% {-moz-transform:scale(1.0);}
   100% {-moz-transform:scale(0.3);}
 }
-@font-face{
+/* @font-face{
   font-family: "Amstelvar-Roman-VF";
   src: url('/themes/diaspora/source/ttf/Amstelvar-Roman-VF.woff2');
 }
 * {
   font-family: "Amstelvar-Roman-VF";
-}
+} */
 
 body.loading #container,body.loading #single,body.loading .nav {opacity:0;}
 html.loading,body.loading {height:100%;overflow:hidden;}
